@@ -59,6 +59,7 @@
         <el-input v-model="addCateForm.cat_name"></el-input>
       </el-form-item>
       <el-form-item label="父级分类:">
+        <!-- 级联选择框器 -->
         <el-cascader v-model="selectedKeys" :options="parentCateList"
         :props="cascaderProps" @change="parentCateChanged" clearable change-on-select>
         </el-cascader>
